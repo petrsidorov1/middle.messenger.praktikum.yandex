@@ -8,7 +8,7 @@
     "compile": "parcel build index.html --cache-dir .parcel-cache",
     "uncache": "rm -rf .parcel-cache",
     "build": "npm run uncache && npm run compile",
-    "start": "node server/index.js"
+    "start": "parcel build index.html && node server/index.js"
   },
   "engines": {
     "npm": ">=8.1.4",
