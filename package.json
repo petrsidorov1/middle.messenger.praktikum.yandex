@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "serve": "parcel index.html",
-    "dev": "cross-env NODE_ENV=development npm run uncache && npm run serve",
+    "dev": "PORT=3000 npm run uncache && npm run serve",
     "compile": "parcel build index.html --cache-dir .parcel-cache",
     "uncache": "rm -rf .parcel-cache",
     "build": "npm run uncache && npm run compile",
