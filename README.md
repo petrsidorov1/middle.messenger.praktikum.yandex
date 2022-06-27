@@ -1,5 +1,4 @@
-# О проекте
-
+# О прое
 Веб приложение чат
 Ссылка на макеты (яндекс): 
 https://www.figma.com/file/jF5fFFzgGOxQeB4CmKWTiE/Chat_external_link?node-id=0%3A1
