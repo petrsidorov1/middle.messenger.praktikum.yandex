@@ -1,0 +1,119 @@
+@import './message.css';
+
+.history-panel__profile {
+    text-align: right;
+}
+
+.history-panel__toolbar {
+    padding: 10px;
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+.search-input {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    background-color: $color-gray;
+    border: none;
+    padding: 6px 30px;
+}
+
+.chat-wrapper {
+    display: flex;
+    height: 100%;
+}
+
+.history-panel {
+    background-color: $chat-background-gray; 
+}
+
+.chat-current {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.chat-current__info-panel {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+}
+
+.chat-current__info-panel::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    width: 95%;
+    border-bottom: 1px solid $lighter-gray;
+}
+
+.history-panel__chat {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-current__info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 120px;
+}
+
+.chat {
+    padding: 30px;
+    /* padding-top: 48px; */
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    justify-content: space-evenly;
+}
+
+.chat__date{
+    width: fit-content;
+    color: $light-gray;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.chat__message{
+    padding: 10px;
+    max-width: 350px;
+    background-color: $chat-background-gray;
+}
+
+.message-left {
+    border-radius: 0 12px 12px 12px;
+}
+
+.message-right {
+    background-color: $color-chat-blue;
+    border-radius: 12px 12px 0px 12px;
+    align-self: end
+}
+
+.message-toolbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.message-input {
+    background-color: $color-gray;
+    width: calc(100% - 90px);
+    padding: 10px 20px;
+    border-radius: 30px;
+    border:none;
+}
+
+.message-time{
+    float: right;
+    font-size: .8rem;
+}
