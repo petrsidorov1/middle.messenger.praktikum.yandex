@@ -1,7 +1,7 @@
 import { default as buttonPrimary } from '../../components/buttons/buttonPrimary/buttonPrimary.tmpl';
 import { default as buttonSuccess } from '../../components/buttons/buttonSuccess/buttonSuccess.tmpl';
 import { default as buttonWarning } from '../../components/buttons/buttonWarning/buttonWarning.tmpl';
-
+import { testButton } from './testButton';
 const template = `
 <div class="settings">
     <div class="settings-heading">
@@ -44,6 +44,7 @@ const template = `
     ${buttonPrimary}
     ${buttonWarning}
     ${buttonSuccess}
+    ${testButton('{{ phone_label }}')}
     </div>
 
 </div>
