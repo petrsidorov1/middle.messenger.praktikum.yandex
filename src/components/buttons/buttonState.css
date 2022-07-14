@@ -1,0 +1,19 @@
+.button-danger {
+    background-color: $color-danger;
+    color: white;
+}
+
+.button-primary {
+    background-color: $color-primary;
+    color: white;
+}
+
+.button-success {
+    background-color: $color-success;
+    color: white;
+}
+
+.button-success {
+    background-color: $color-success;
+    color: white;
+}

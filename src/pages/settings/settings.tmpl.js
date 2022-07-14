@@ -1,7 +1,6 @@
-import { default as buttonPrimary } from '../../components/buttons/buttonPrimary/buttonPrimary.tmpl';
-import { default as buttonSuccess } from '../../components/buttons/buttonSuccess/buttonSuccess.tmpl';
-import { default as buttonWarning } from '../../components/buttons/buttonWarning/buttonWarning.tmpl';
-import { testButton } from './testButton';
+import { elementsMultiplier } from "../../utils/elementsMultiplier";
+import { basicButton } from "../../components/buttons/buttonBasic";
+
 const template = `
 <div class="settings">
     <div class="settings-heading">
@@ -41,14 +40,16 @@ const template = `
         </div>
     </div>
     <div class="action-buttons">
-    ${buttonPrimary}
-    ${buttonWarning}
-    ${buttonSuccess}
-    ${testButton('{{ phone_label }}')}
-    </div>
+    ${elementsMultiplier(
+      basicButton(),
+      { options: ["primary", "warning", "danger"] },
+      "{{ primaryButtonName }}",
+      "{{ warningButtonName }}",
+      "{{ dangerButtonName }}"
+    )}
 
+    </div>
+   
 </div>
 `;
 export default template;
-
-// <& multiple(testButton(), '{{ phone_label }}', '{{ phone_l }}') &>

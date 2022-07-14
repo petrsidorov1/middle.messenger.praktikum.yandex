@@ -23,9 +23,8 @@ const context = {
   password_label: 'Password',
   nameHeading: 'Ivan',
   primaryButtonName: 'Изменить данные',
-  secondaryButtonName: 'No account?',
   warningButtonName: 'Изменить пароль',
-  successButtonName: 'Выйти',
+  dangerButtonName: 'Выйти',
   avatar: 'https://www.redditstatic.com/avatars/defaults/v2/avatar_default_7.png',
 
   primaryButtonClick: () => {

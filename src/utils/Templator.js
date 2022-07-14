@@ -4,7 +4,7 @@ import { emptyTemplatesChecker } from "./emptyTemplatesChecker.js";
 export default class Templator {
   TEMPLATE_REGEXP = /\{\{(.*?)\}\}/gi;
   FUNC_MULTIPLIER_REGEXP = /\<\&(.*?)\&\>/gi;
-
+  
   constructor(template) {
     this._template = template;
   }
@@ -19,13 +19,6 @@ export default class Templator {
     const regExp = this.TEMPLATE_REGEXP;
     const funcMultiplierRegExp = this.FUNC_MULTIPLIER_REGEXP;
 
-    let runAllExpressions = function(){
-
-    }
-
-    let runExpression = function(){
-        
-    }
     // Важно делать exec именно через константу, иначе уйдёте в бесконечный цикл
     while ((key = regExp.exec(tmpl))) {
       if (key[1]) {
